@@ -1,0 +1,105 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/shinyaharada/.nvm/versions/node/v6.9.1/bin/node',
+1 verbose cli   '/Users/shinyaharada/.nvm/versions/node/v6.9.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/shinyaharada/projects/vue-bootstrap-tooltip',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/shinyaharada/.npm/vue-bootstrap-tooltip/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/shinyaharada/.npm correctMkdir not in flight; initializing
+10 info lifecycle vue-bootstrap-tooltip@1.0.0~prepublish: vue-bootstrap-tooltip@1.0.0
+11 silly lifecycle vue-bootstrap-tooltip@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/shinyaharada/.npm/vue-bootstrap-tooltip/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/shinyaharada/projects/vue-bootstrap-tooltip' ]
+13 verbose tarball /Users/shinyaharada/.npm/vue-bootstrap-tooltip/1.0.0/package.tgz
+14 verbose folder /Users/shinyaharada/projects/vue-bootstrap-tooltip
+15 verbose addLocalTarball adding from inside cache /Users/shinyaharada/.npm/vue-bootstrap-tooltip/1.0.0/package.tgz
+16 verbose correctMkdir /Users/shinyaharada/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd vue-bootstrap-tooltip@1.0.0
+18 verbose afterAdd /Users/shinyaharada/.npm/vue-bootstrap-tooltip/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/shinyaharada/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/shinyaharada/.npm/vue-bootstrap-tooltip/1.0.0/package/package.json written
+21 silly publish { name: 'vue-bootstrap-tooltip',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: '',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   author: { name: 'furodrive' },
+21 silly publish   license: 'ISC',
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'vue-bootstrap-tooltip@1.0.0',
+21 silly publish   _shasum: '54558309da538f912ec17574c09c7ccf79fc0875',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name vue-bootstrap-tooltip
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'vue-bootstrap-tooltip',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'vue-bootstrap-tooltip',
+26 silly mapToRegistry   name: 'vue-bootstrap-tooltip',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/vue-bootstrap-tooltip
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/shinyaharada/.npm/vue-bootstrap-tooltip/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/vue-bootstrap-tooltip
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 10:02:15
+33 verbose request using bearer token for auth
+34 verbose request id b2de4b2d6cda9598
+35 http request PUT https://registry.npmjs.org/vue-bootstrap-tooltip
+36 http 404 https://registry.npmjs.org/vue-bootstrap-tooltip
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=0',
+37 verbose headers   'content-length': '2',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Wed, 18 Oct 2017 01:02:16 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   age: '0',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-itm7422-ITM',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1508288535.458237,VS0,VE546',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/shinyaharada/.npm/registry.npmjs.org/vue-bootstrap-tooltip on PUT
+39 error publish Failed PUT 404
+40 verbose stack Error: Registry returned 404 for PUT on https://registry.npmjs.org/vue-bootstrap-tooltip
+40 verbose stack     at makeError (/Users/shinyaharada/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/shinyaharada/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:280:14)
+40 verbose stack     at Request._callback (/Users/shinyaharada/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/Users/shinyaharada/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/shinyaharada/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/shinyaharada/.nvm/versions/node/v6.9.1/lib/node_modules/npm/node_modules/request/request.js:965:12)
+41 verbose statusCode 404
+42 verbose pkgid vue-bootstrap-tooltip
+43 verbose cwd /Users/shinyaharada/projects/vue-bootstrap-tooltip
+44 error Darwin 17.0.0
+45 error argv "/Users/shinyaharada/.nvm/versions/node/v6.9.1/bin/node" "/Users/shinyaharada/.nvm/versions/node/v6.9.1/bin/npm" "publish"
+46 error node v6.9.1
+47 error npm  v3.10.8
+48 error code E404
+49 error 404 Registry returned 404 for PUT on https://registry.npmjs.org/vue-bootstrap-tooltip
+50 error 404
+51 error 404 'vue-bootstrap-tooltip' is not in the npm registry.
+52 error 404 You should bug the author to publish it (or use the name yourself!)
+53 error 404 Note that you can also install from a
+54 error 404 tarball, folder, http url, or git url.
+55 verbose exit [ 1, true ]
